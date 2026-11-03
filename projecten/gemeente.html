@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What state will your mayor leave your municipality in? · Tina Boeykens</title>
+  <meta name="description" content="Three hundred dynamic municipality profiles generated from a single template.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+
+  <!-- =========================================================
+       PROJECT DETAIL PAGE
+       Copy this file to make the next project page.
+       Everything between [ ] is still to be filled in.
+       ========================================================= -->
+
+  <a class="project-back" href="../index.html#interactive">&larr; Back</a>
+
+  <!-- 1. TOP: title, short intro and the facts, with the cover image next to it (below it on mobile) -->
+  <header class="project-header section-light">
+    <div class="container project-header-grid">
+      <div class="project-header-text">
+        <h1 class="project-title"><span class="project-number" aria-hidden="true">01</span>What state will your mayor leave your municipality in?</h1>
+        <p class="project-lead">Three hundred dynamic municipality profiles generated from a single template.</p>
+
+        <dl class="project-facts">
+          <div><dt>Client</dt><dd>De Standaard</dd></div>
+          <div><dt>Role</dt><dd>Text &amp; Production</dd></div>
+          <div><dt>Year</dt><dd>2024</dd></div>
+        </dl>
+      </div>
+
+      <!-- 2. COVER IMAGE -->
+      <figure class="project-cover">
+        <video src="../assets/gemeente-scroll.webm" poster="../assets/gemeente.webp" autoplay muted loop playsinline aria-label="Scrolling through a municipality profile."></video>
+      </figure>
+    </div>
+  </header>
+
+  <!-- 3. THE STORY: text blocks and images, in any order -->
+  <main class="project-content container">
+
+    <section class="project-block">
+      <p>We set to work with data from the Flemish Gemeente- en Stadsmonitor (Municipal and City Monitor): one template for 300 unique municipality profiles.</p>
+    </section>
+
+    <section class="project-block">
+      <p>Each report shows the mayor, statistics, a custom map, a photo gallery and comparison charts, all tailored to the municipality you're in. A coastal town like Blankenberge gets different comparison groups than a regional city like Ghent.</p>
+    </section>
+
+    <figure class="project-image">
+      <img src="../assets/gemeente2.webp" alt="Opening of the Puurs-Sint-Amands profile: a map of the municipality, the headline and the intro." loading="lazy">
+    </figure>
+
+    <!-- two images side by side -->
+    <div class="project-image-pair">
+      <figure class="project-image">
+        <img src="../assets/gemeente3.webp" alt="Photo gallery of black-and-white pictures of buildings in Puurs-Sint-Amands." loading="lazy">
+      </figure>
+      <figure class="project-image">
+        <img src="../assets/gemeente5.webp" alt="Blocks showing the share of offences by type: theft and extortion, property damage, physical violence and drugs." loading="lazy">
+      </figure>
+    </div>
+
+    <section class="project-block">
+      <p>The conditional text generation was the most challenging part: for each municipality, picking the right trend, comparison group and context from data in Google Sheets. An interactive D3 choropleth shows house prices, and comparison bars score the municipality on road safety, crime and ageing. The photos and image galleries were gathered with scrapers from our own and public sources, and the whole thing is built in Svelte.</p>
+    </section>
+
+    <figure class="project-image">
+      <img src="../assets/gemeente6.webp" alt="Interactive map of West Flanders with the median house price per municipality, Blankenberge highlighted." loading="lazy">
+    </figure>
+
+    <figure class="project-image">
+      <img src="../assets/gemeente4.webp" alt="Black-and-white photo of the bridge over the canal with the figure 39% and the headline 'Fier op uw gemeente' (Proud of your municipality)." loading="lazy">
+    </figure>
+
+    <!-- 4. CREDITS: tools and team -->
+    <div class="project-credits">
+      <section class="project-credits-box">
+        <h2>Made with</h2>
+        <ul class="project-tags">
+          <li>Svelte</li>
+          <li>D3.js</li>
+          <li>Python</li>
+          <li>Google Sheets</li>
+        </ul>
+      </section>
+
+      <section class="project-credits-box">
+        <h2>Made by</h2>
+        <dl class="project-team">
+          <div><dt>Jeroen Struys</dt><dd>Text</dd></div>
+          <div><dt>Andy Stevens</dt><dd>Text &amp; production</dd></div>
+          <div><dt>Tina Boeykens</dt><dd>Text &amp; production</dd></div>
+          <div><dt>Joppe Rabijns</dt><dd>Production</dd></div>
+        </dl>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- 4. BOTTOM: back to the overview -->
+  <nav class="project-nav section-dark">
+    <a class="button" href="../index.html#interactive">&larr; All projects</a>
+  </nav>
+
+</body>
+</html>

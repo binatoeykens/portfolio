@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The race for the planet · Tina Boeykens</title>
+  <meta name="description" content="A data-driven climate story with 3D globes and interactive charts.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+
+  <!-- =========================================================
+       PROJECT DETAIL PAGE
+       Copy this file to make the next project page.
+       ========================================================= -->
+
+  <a class="project-back" href="../index.html#dataviz">&larr; Back</a>
+
+  <!-- 1. TOP: title, short intro and the facts, with the cover image next to it (below it on mobile) -->
+  <header class="project-header section-light">
+    <div class="container project-header-grid">
+      <div class="project-header-text">
+        <h1 class="project-title"><span class="project-number" aria-hidden="true">01</span>The race for the planet</h1>
+        <p class="project-lead">A data-driven climate story with 3D globes and interactive charts.</p>
+
+        <dl class="project-facts">
+          <div><dt>Client</dt><dd>De Standaard</dd></div>
+          <div><dt>Role</dt><dd>Data visualisation &amp; Development</dd></div>
+          <div><dt>Year</dt><dd>2023</dd></div>
+          <div><dt>Live</dt><dd><a href="https://extra.standaard.be/html/2023/cop23/index.html" target="_blank" rel="noopener">View project &rarr;</a></dd></div>
+        </dl>
+      </div>
+
+      <!-- 2. COVER IMAGE -->
+      <figure class="project-cover">
+        <video src="../assets/cover-planeet.mp4" autoplay muted loop playsinline aria-label="Drone footage of a solar park."></video>
+      </figure>
+    </div>
+  </header>
+
+  <!-- 3. THE STORY: text blocks and images, in any order -->
+  <main class="project-content container">
+
+    <section class="project-block">
+      <p>On the eve of the UN climate summit COP28 in Dubai, we mapped the double race: the lightning-fast roll-out of renewable energy against the escalating disruption of the climate.</p>
+    </section>
+
+    <figure class="project-image">
+      <img src="../assets/planeet-hero.webp" alt="Full-screen opening with drone footage of a solar park and the opening text." loading="lazy">
+      <figcaption>Opening with video of a solar park</figcaption>
+    </figure>
+
+    <section class="project-block">
+      <p>More than ten Flourish infographics carry the story. I made the data visualisations together with Andy, and the text came from Ine Renson. Joppe built two interactive 3D globes in Three.js.</p>
+    </section>
+
+    <figure class="project-image">
+      <img src="../assets/planeet-infographic.webp" alt="Flourish line chart on the tipping point for green energy in Europe." loading="lazy">
+      <figcaption>Interactive Flourish chart: wind and solar vs. fossil fuels in Europe</figcaption>
+    </figure>
+
+    <div class="project-image-pair">
+      <figure class="project-image">
+        <img src="../assets/planeet-globemob.webp" alt="Interactive 3D globe with drought scenarios and scenario buttons." loading="lazy">
+        <figcaption>3D globe with three climate scenarios</figcaption>
+      </figure>
+      <figure class="project-image">
+        <img src="../assets/planeet-globemob2.webp" alt="Interactive 3D globe with drought scenarios." loading="lazy">
+      </figure>
+    </div>
+
+    <!-- 4. CREDITS: tools and team -->
+    <div class="project-credits">
+      <section class="project-credits-box">
+        <h2>Made with</h2>
+        <ul class="project-tags">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Three.js</li>
+          <li>Flourish</li>
+        </ul>
+      </section>
+
+      <section class="project-credits-box">
+        <h2>Made by</h2>
+        <dl class="project-team">
+          <div><dt>Ine Renson</dt><dd>Text</dd></div>
+          <div><dt>Andy Stevens</dt><dd>Data visualisation &amp; development</dd></div>
+          <div><dt>Tina Boeykens</dt><dd>Data visualisation &amp; development</dd></div>
+          <div><dt>Joppe Rabijns</dt><dd>Development</dd></div>
+        </dl>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- 4. BOTTOM: back to the overview -->
+  <nav class="project-nav section-dark">
+    <a class="button" href="../index.html#dataviz">&larr; All projects</a>
+  </nav>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One year of war in Ukraine · Tina Boeykens</title>
+  <meta name="description" content="A multimedia longread with an animated frontline map and sequential video footage.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+
+  <!-- =========================================================
+       PROJECT DETAIL PAGE
+       Copy this file to make the next project page.
+       ========================================================= -->
+
+  <a class="project-back" href="../index.html#interactive">&larr; Back</a>
+
+  <!-- 1. TOP: title, short intro and the facts, with the cover image next to it (below it on mobile) -->
+  <header class="project-header section-light">
+    <div class="container project-header-grid">
+      <div class="project-header-text">
+        <h1 class="project-title"><span class="project-number" aria-hidden="true">06</span>One year of war in Ukraine</h1>
+        <p class="project-lead">A multimedia longread with an animated frontline map and sequential video footage.</p>
+
+        <dl class="project-facts">
+          <div><dt>Client</dt><dd>De Standaard</dd></div>
+          <div><dt>Role</dt><dd>Text, Design &amp; Development</dd></div>
+          <div><dt>Year</dt><dd>2023</dd></div>
+          <div><dt>Live</dt><dd><a href="https://extra.standaard.be/html/2023/oekraine/index.html" target="_blank" rel="noopener">View project &rarr;</a></dd></div>
+        </dl>
+      </div>
+
+      <!-- 2. COVER IMAGE -->
+      <figure class="project-cover">
+        <video src="../assets/oekr-video.webm" poster="../assets/oekr.webp" autoplay muted loop playsinline aria-label="Drone footage of the destroyed Azovstal plant in Mariupol."></video>
+      </figure>
+    </div>
+  </header>
+
+  <!-- 3. THE STORY: text blocks and images, in any order -->
+  <main class="project-content container">
+
+    <section class="project-block">
+      <p>On the first anniversary of the Russian invasion, we told the story of the war in five figures: 1.2 million destroyed buildings, 18,955 civilian casualties, 8 million refugees, 105,000 km² of occupied territory, 350 billion dollars for reconstruction.</p>
+    </section>
+
+    <div class="project-image-pair">
+      <figure class="project-image">
+        <img src="../assets/oekr2.webp" alt="Three videos side by side showing bombardments in the first days of the war." loading="lazy">
+        <figcaption>Photo and video compilations for maximum impact</figcaption>
+      </figure>
+      <figure class="project-image">
+        <img src="../assets/oekr3.webp" alt="Animated map of Ukraine with the shifting frontline based on ISW data." loading="lazy">
+        <figcaption>Animated frontline map based on ISW shapefiles</figcaption>
+      </figure>
+    </div>
+
+    <section class="project-block">
+      <p>The whole project – text, design and development – was done together with Andy. The video footage came through Arno at the video desk. We were also proud of the animated map, built on ISW shapefiles and processed in QGIS and Python, which shows the frontline shifting day by day.</p>
+    </section>
+
+    <!-- 4. CREDITS: tools and team -->
+    <div class="project-credits">
+      <section class="project-credits-box">
+        <h2>Made with</h2>
+        <ul class="project-tags">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>QGIS</li>
+          <li>Python</li>
+        </ul>
+      </section>
+
+      <section class="project-credits-box">
+        <h2>Made by</h2>
+        <dl class="project-team">
+          <div><dt>Tina Boeykens</dt><dd>Text, design &amp; development</dd></div>
+          <div><dt>Andy Stevens</dt><dd>Text, map &amp; development</dd></div>
+          <div><dt>Arno Vanhollebeke</dt><dd>Video</dd></div>
+        </dl>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- 4. BOTTOM: back to the overview -->
+  <nav class="project-nav section-dark">
+    <a class="button" href="../index.html#interactive">&larr; All projects</a>
+  </nav>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data visualisations on daily news · Tina Boeykens</title>
+  <meta name="description" content="A selection of infographics I made during news shifts.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+
+  <!-- =========================================================
+       PROJECT DETAIL PAGE
+       Copy this file to make the next project page.
+       ========================================================= -->
+
+  <a class="project-back" href="../index.html#dataviz">&larr; Back</a>
+
+  <!-- 1. TOP: title, short intro and the facts, with the cover image next to it (below it on mobile) -->
+  <header class="project-header section-light">
+    <div class="container project-header-grid">
+      <div class="project-header-text">
+        <h1 class="project-title"><span class="project-number" aria-hidden="true">03</span>Data visualisations on daily news</h1>
+        <p class="project-lead">A selection of infographics I made during news shifts.</p>
+
+        <dl class="project-facts">
+          <div><dt>Client</dt><dd>De Standaard</dd></div>
+          <div><dt>Role</dt><dd>Production</dd></div>
+        </dl>
+      </div>
+
+      <!-- 2. COVER IMAGE -->
+      <figure class="project-cover">
+        <img src="../assets/cover-dailies.png" alt="A few examples of charts made during news shifts.">
+      </figure>
+    </div>
+  </header>
+
+  <!-- 3. THE CHARTS: live Datawrapper embeds -->
+  <main class="project-content container">
+
+    <figure class="project-embed">
+      <iframe title="How much does your mayor earn" aria-label="Choropleth map" id="datawrapper-chart-7yYcw" src="https://datawrapper.dwcdn.net/7yYcw/1/" scrolling="no" height="513" loading="lazy" data-external="1"></iframe>
+    </figure>
+
+    <figure class="project-embed">
+      <iframe title="Frontline in Ukraine on 13 August 2023" aria-label="Locator map" id="datawrapper-chart-wx5DE" src="https://datawrapper.dwcdn.net/wx5DE/2/" scrolling="no" height="625" loading="lazy" data-external="1"></iframe>
+    </figure>
+
+    <figure class="project-embed">
+      <iframe title="Damaged and destroyed buildings in Gaza" aria-label="Locator map" id="datawrapper-chart-Le1mI" src="https://datawrapper.dwcdn.net/Le1mI/8/" scrolling="no" height="591" loading="lazy" data-external="1"></iframe>
+    </figure>
+
+    <figure class="project-embed">
+      <iframe title="Situation in Gaza" aria-label="Locator map" id="datawrapper-chart-45CfA" src="https://datawrapper.dwcdn.net/45CfA/6/" scrolling="no" height="594" loading="lazy" data-external="1"></iframe>
+    </figure>
+
+    <figure class="project-embed">
+      <iframe title="Burnt areas in Europe" aria-label="Line chart" id="datawrapper-chart-0FIJc" src="https://datawrapper.dwcdn.net/0FIJc/8/" scrolling="no" height="600" loading="lazy" data-external="1"></iframe>
+    </figure>
+
+    <figure class="project-embed">
+      <iframe title="Natural gas price" aria-label="Line chart" id="datawrapper-chart-bn970" src="https://datawrapper.dwcdn.net/bn970/3/" scrolling="no" height="500" loading="lazy" data-external="1"></iframe>
+    </figure>
+
+    <figure class="project-embed">
+      <iframe title="The US Senate" aria-label="Choropleth map" id="datawrapper-chart-wREj4" src="https://datawrapper.dwcdn.net/wREj4/6/" scrolling="no" height="536" loading="lazy" data-external="1"></iframe>
+    </figure>
+
+    <figure class="project-embed">
+      <iframe title="Population growth in 2021" aria-label="Choropleth map" id="datawrapper-chart-9jR4S" src="https://datawrapper.dwcdn.net/9jR4S/6/" scrolling="no" height="453" loading="lazy" data-external="1"></iframe>
+    </figure>
+
+    <!-- 4. CREDITS -->
+    <div class="project-credits">
+      <section class="project-credits-box">
+        <h2>Made with</h2>
+        <ul class="project-tags">
+          <li>Datawrapper</li>
+        </ul>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- 4. BOTTOM: back to the overview -->
+  <nav class="project-nav section-dark">
+    <a class="button" href="../index.html#dataviz">&larr; All projects</a>
+  </nav>
+
+  <!-- Datawrapper: lets every chart set its own height -->
+  <script>
+    window.addEventListener('message', (e) => {
+      const heights = e.data && e.data['datawrapper-height'];
+      if (!heights) return;
+      document.querySelectorAll('.project-embed iframe').forEach((frame) => {
+        if (frame.contentWindow === e.source) {
+          for (const id in heights) frame.style.height = heights[id] + 'px';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
